@@ -1,0 +1,52 @@
+ 
+
+#race{
+    
+    margin: auto auto;
+    background-image:url("./racetrack.jpg"); 
+    width: 600px;
+    height: 600px;
+    border: 2px solid red;
+    background-size: cover;
+
+
+   
+} 
+
+.car img{
+width: 20%;
+height: 28%;
+position: absolute;
+top: 25px;
+left: 258px;
+transform: rotateZ(90deg);
+
+}
+
+.car{
+  position: relative;
+  width: 100%;
+  height: 100%;;
+  
+animation: car  10s linear infinite ; 
+
+}
+
+
+
+@keyframes car{
+
+0%{
+transform:  rotateZ(0deg); 
+
+}
+
+100%{
+  transform:  rotateZ(360deg); 
+  
+  }
+
+
+
+
+}

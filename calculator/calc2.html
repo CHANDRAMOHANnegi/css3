@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./calc_2.js"></script>
+    <style>
+
+
+#calc{ 
+
+    background-color: rgba(0, 1, 1, 0.623);
+    width: 350px;
+    height: 500px;
+}
+
+.expression{
+ 
+    width: 250px;
+    height: 100px;
+    
+    margin-bottom:-60px;
+   
+    margin-left: 20px;
+ 
+    
+}
+
+#expression{
+    display: inline-block;background-color: #fff;
+    width: 255px;
+    height: 50px;
+    margin-top: 10px;
+
+    margin-left: 25px;
+}
+
+
+        #result {
+ 
+            margin: 20px;
+            margin-top: -27px;
+        
+            padding: 10px 20px;
+           
+            margin-left: 25px;
+ 
+        }
+
+
+input[type=text]{
+background-color: #bbb;
+height: 30px;
+margin-left: 0px;
+padding-left: 30%;margin-top: 20px;
+
+}
+
+    #buttons {
+        padding-right: 0px;
+        display: flex;
+        flex-wrap: wrap;
+
+        flex-direction: row-cols;
+        width: 250px;
+        
+        margin: 25px;
+        margin-left: 20px;
+        padding-top: 20px;
+        justify-content: center;
+        /* background-color: aquamarine; */
+        padding-right: -4px;
+        height: 240px;
+        
+
+    }
+        .numberbtn {
+            background-color: mistyrose;
+             
+            width: 50px;
+            height: 30px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+
+.operators{
+
+    margin-top: -285px;
+    justify-content: space-around;
+
+   margin-left: 235px;
+   display:flex;
+   
+   flex-direction: column;
+
+ 
+}
+
+
+.opr{
+    width: 50px;
+    height: 30px;
+margin: 20px;
+margin-right: 20px;
+margin-bottom: 10px;
+border: 2px solid red;
+border-radius: 10px;
+background-color: darkorange;
+text-align: center;
+} 
+
+.equals{
+
+display:flex;
+justify-content: space-evenly; 
+flex-direction: row;
+ 
+}
+
+.equals button{
+width:45px ;
+height: 30px;
+margin:20px;
+
+
+}
+
+#equals{border: 2px solid black;
+    border-radius: 10px;
+margin-left: 0px;
+background-color: tomato;
+margin-right: -100px;
+}
+
+
+#back{border: 2px solid black;
+border-radius: 10px;
+background-color: tomato;
+    margin-left: -40px;
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Calc App</h1>
+
+
+    <ul>
+<li><a href="../cube/3d_cube.html">3D CUBE</a>     </li>
+<li><a href="../raceTrack/racetrack.html">RACE TRACK</a>     </li>
+
+    </ul>
+
+<div id="calc">
+
+        <div class="expression">
+
+            <span id="expression"></span>
+
+        </div>
+
+
+                <div id="result">
+                    <input type="text" id="operations">
+                </div>
+
+    <div id="buttons">
+
+    <button id="dot" class="numberbtn">.</button>
+    <button id="clear" class="numberbtn">C</button>
+    
+    </div>
+
+    
+    <div class="operators">
+        <button class="opr">+</button>
+        <button class="opr">-</button>
+        <button class="opr">/</button>
+        <button class="opr">*</button>
+    </div>
+
+    <div class="equals">
+
+        <div><button id="equals">=</button></div> 
+    <div><button id="back"><--</button></div>
+
+    </div>
+
+</div>
+</body>
+</html> 
